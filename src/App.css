@@ -55,7 +55,26 @@ button.set:hover {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+  }
+  
+  /* Center the container vertically and align content to the top */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  /* Add margin between buttons */
   button {
-    padding: 8px 16px; /* Adjust button padding for smaller screens */
+    margin: 5px;
+  }
+
+  /* Make the counter text larger for better visibility on mobile */
+  .counter {
+    font-size: 2rem;
   }
 }
